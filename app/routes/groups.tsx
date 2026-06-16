@@ -1,3 +1,4 @@
+import Header from "~/components/header";
 import { Button } from "../components/ui/button";
 
 import {
@@ -42,6 +43,7 @@ export default function Groups() {
 
   return (
     <>
+      <Header />
       <h1>Groups</h1>
 
       <Button>This is a button</Button>
@@ -65,7 +67,7 @@ export default function Groups() {
           {groupTable.map((group) => (
             <TableRow key={group.id}>
               <TableCell className="font-medium">{group.id}</TableCell>
-              <TableCell>{group.name}</TableCell>
+              <TableCell className="hover:text-green-500 hover:underline">{<a href={`/groups/${group.id}`}>{group.name}</a>}</TableCell>
               <TableCell>{group.center}</TableCell>
               <TableCell>{group.numGroupLeaders}</TableCell>
               <TableCell>{group.numStudents}</TableCell>

@@ -8,6 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "../components/ui/table";
+import Header from "~/components/header";
 
 type StaffMember = {
     id: number;
@@ -36,7 +37,9 @@ export default function staff(){
     }, []);
  
     return(
-       <> <h1>Staff</h1>
+       <> 
+       <Header/>
+       <h1>Staff</h1>
         <Table>
             <TableCaption>A list of your staff.</TableCaption>
             <TableHeader>

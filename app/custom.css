@@ -1,0 +1,28 @@
+.header {
+  height: 85px;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background: #59ff78;
+  background: linear-gradient(
+    30deg,
+    rgba(89, 255, 120, 1) 0%,
+    rgba(76, 255, 36, 1) 100%
+  );
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.eChat {
+  font-size: larger;
+  font-weight: bolder;
+}
