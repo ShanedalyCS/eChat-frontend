@@ -120,31 +120,28 @@ export default function IndividualGroup() {
       <TableHead className="w-[100px]">ID</TableHead>
       <TableHead>First Name</TableHead>
       <TableHead>Last Name</TableHead>
-      <TableHead className="text-right">Age</TableHead>
-      <TableHead className="text-right">Gender</TableHead>
-      <TableHead className="text-right">Center</TableHead>
-      <TableHead className="text-right">Group (ID)</TableHead>
-      <TableHead className="text-right">Arrival Date</TableHead>
-      <TableHead className="text-right">Departure Date</TableHead>
+      <TableHead className="text-center">Age</TableHead>
+      <TableHead className="text-center">Gender</TableHead>
+      <TableHead className="text-center">Center</TableHead>
+      <TableHead className="text-center">Group (ID)</TableHead>
+      <TableHead className="text-center">Arrival Date</TableHead>
+      <TableHead className="text-center">Departure Date</TableHead>
     </TableRow>
   </TableHeader>
   <TableBody>
-    <TableRow>
-      {groupLeaders.map((leader) => (
-        <TableRow key={leader.id}>
-          <TableCell className="w-[100px]">{leader.id}</TableCell>
-          <TableCell>{leader.firstName}</TableCell>
-          <TableCell>{leader.lastName}</TableCell>
-          <TableCell className="text-right">{leader.age}</TableCell>
-          <TableCell className="text-right">{leader.gender}</TableCell>
-          <TableCell className="text-right">{leader.center}</TableCell>
-          <TableCell className="text-right">{group?.name} ({group?.id})</TableCell>
-          <TableCell className="text-right">{leader.arrivalDate}</TableCell>
-          <TableCell className="text-right">{leader.departureDate}</TableCell>
-        </TableRow>
-      ))}
-
-    </TableRow>
+    {groupLeaders.map((leader) => (
+      <TableRow key={leader.id}>
+        <TableCell className="w-[100px]">{leader.id}</TableCell>
+        <TableCell>{leader.firstName}</TableCell>
+        <TableCell>{leader.lastName}</TableCell>
+        <TableCell className="text-center">NULL</TableCell>
+        <TableCell className="text-center">NULL</TableCell>
+        <TableCell className="text-center">NULL</TableCell>
+        <TableCell className="text-center">{group?.name} ({group?.id})</TableCell>
+        <TableCell className="text-center">NULL</TableCell>
+        <TableCell className="text-center">NULL</TableCell>
+      </TableRow>
+    ))}
   </TableBody>
 </Table>
       

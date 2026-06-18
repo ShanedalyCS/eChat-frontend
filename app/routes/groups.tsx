@@ -46,7 +46,6 @@ export default function Groups() {
       <Header />
       <h1>Groups</h1>
 
-      <Button>This is a button</Button>
 
       <Table>
         <TableCaption>A list of your groups.</TableCaption>
