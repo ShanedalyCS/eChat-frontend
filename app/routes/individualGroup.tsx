@@ -131,8 +131,8 @@ export default function IndividualGroup() {
   <TableBody>
     {groupLeaders.map((leader) => (
       <TableRow key={leader.id}>
-        <TableCell className="w-[100px]">{leader.id}</TableCell>
-        <TableCell>{leader.firstName}</TableCell>
+        <TableCell className="w-[100px]"><a href={`/groupleaders/${leader.id}`}>{leader.id}</a></TableCell>
+        <TableCell><a href={`/groupleaders/${leader.id}`}>{leader.firstName}</a></TableCell>
         <TableCell>{leader.lastName}</TableCell>
         <TableCell className="text-center">NULL</TableCell>
         <TableCell className="text-center">NULL</TableCell>
@@ -165,8 +165,8 @@ export default function IndividualGroup() {
   <TableBody>
     {students.map((student) => (
       <TableRow key={student.id}>
-        <TableCell className="w-[100px]">{student.id}</TableCell>
-        <TableCell>{student.firstName}</TableCell>
+        <TableCell className="w-[100px]"><a href={`/students/${student.id}`}>{student.id}</a></TableCell>
+        <TableCell><a href={`/student/${student.id}`}>{student.firstName}</a></TableCell>
         <TableCell>{student.lastName}</TableCell>
         <TableCell className="text-center">{student.age}</TableCell>
         <TableCell className="text-center">{student.gender}</TableCell>

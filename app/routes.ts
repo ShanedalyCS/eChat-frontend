@@ -6,5 +6,6 @@ export default [
     route("/groups/:groupId", "routes/individualGroup.tsx"),
     route("/staff", "routes/staff.tsx"),
     route("/activities", "routes/activities.tsx"),
+    route("/students/:studentId", "routes/individualStudent.tsx"),
 
 ] satisfies RouteConfig;
